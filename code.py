@@ -7,10 +7,10 @@ import select
 import platform
 
 def clear():
-   if platform.system() =="Linux" or platform.system() =="Darwin":
-      os.system("clear")
    elif platform.system() =="Windows":
       os.system("cls")
+   else:
+      os.system("clear")
 
 # Constants
 GAME_DURATIONS = {1: 60, 2: 600, 3: 1200, 4: 1800}  # in seconds
